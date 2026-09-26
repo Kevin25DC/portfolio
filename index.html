@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kevin Hernández — Full Stack Developer & AI Engineer</title>
+  <meta name="description" content="Ingeniero desarrollador Full Stack: arquitectura de software, código limpio, Java, Python, TypeScript, PL/SQL, CI/CD y agentes de IA (RAG, harness, MCP)." />
+  <meta property="og:title" content="Kevin Hernández — Full Stack Developer & AI Engineer" />
+  <meta property="og:description" content="Arquitectura, código limpio, PL/SQL, CI/CD y agentes de IA." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#07070d" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%238b5cf6'/><stop offset='1' stop-color='%2322d3ee'/></linearGradient></defs><rect width='64' height='64' rx='16' fill='%2307070d'/><text x='50%' y='56%' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='700' font-size='30' fill='url(%23g)'>KH</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#top" class="logo"><span>&lt;</span>KH<span>/&gt;</span></a>
+    <nav class="links">
+      <a href="#about">Sobre mí</a>
+      <a href="#skills">Stack</a>
+      <a href="#ai">IA & Agentes</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#devops">CI/CD</a>
+      <a href="#contact" class="btn-sm">Contacto</a>
+    </nav>
+    <button class="burger" aria-label="Abrir menú"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow reveal"><span class="dot"></span> Disponible para nuevos proyectos</p>
+        <h1 class="reveal">Hola, soy <span class="grad">Kevin Hernández</span></h1>
+        <h2 class="reveal">
+          <span class="typed" data-words='["Full Stack Developer","Arquitecto de Software","AI Engineer · Agentes & RAG","Especialista Oracle PL/SQL","DevOps · CI/CD"]'></span><span class="caret">|</span>
+        </h2>
+        <p class="lead reveal">
+          Ingeniero desarrollador que diseña y construye sistemas de punta a punta: desde el
+          procedimiento PL/SQL que procesa miles de registros hasta el agente de IA que
+          analiza el requerimiento, escribe el código y abre el pull request.
+          <strong>Arquitectura limpia, código legible y cero atajos cuando hay dinero de por medio.</strong>
+        </p>
+        <div class="cta reveal">
+          <a href="#projects" class="btn primary magnetic">Ver proyectos <span>→</span></a>
+          <a href="#contact" class="btn ghost magnetic">Hablemos</a>
+        </div>
+        <div class="socials reveal">
+          <a data-link="github" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg></a>
+          <a data-link="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2ZM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2ZM7.1 20.5H3.6V9h3.5v11.5ZM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0Z"/></svg></a>
+          <a data-link="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-4.1-3.6c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.6.7.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4l-.7-.4ZM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8ZM20.5 3.5A11.9 11.9 0 0 0 1.8 17.8L.1 24l6.3-1.7A11.9 11.9 0 0 0 24 12c0-3.2-1.2-6.2-3.5-8.5Z"/></svg></a>
+          <a data-link="email" aria-label="Correo"><svg viewBox="0 0 24 24"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2 .9v11.6h16V6.4l-8 5.6-8-5.6ZM5.6 6l6.4 4.5L18.4 6H5.6Z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="terminal reveal tilt">
+        <div class="term-head"><i></i><i></i><i></i><span>kevin@dev: ~/agents</span></div>
+        <pre class="term-body" id="term"></pre>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Bajar"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>Java</span><span>Python</span><span>Go</span><span>TypeScript</span><span>PL/SQL</span><span>Oracle 19c</span><span>FastAPI</span><span>Next.js</span><span>React</span><span>PostgreSQL</span><span>Docker</span><span>GitHub Actions</span><span>Claude</span><span>RAG</span><span>MCP</span><span>Pinecone</span><span>Gemini</span><span>DeepSeek</span><span>OpenAI</span><span>Kimi</span><span>Qwen</span>
+        <span>Java</span><span>Python</span><span>Go</span><span>TypeScript</span><span>PL/SQL</span><span>Oracle 19c</span><span>FastAPI</span><span>Next.js</span><span>React</span><span>PostgreSQL</span><span>Docker</span><span>GitHub Actions</span><span>Claude</span><span>RAG</span><span>MCP</span><span>Pinecone</span><span>Gemini</span><span>DeepSeek</span><span>OpenAI</span><span>Kimi</span><span>Qwen</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-head reveal">
+        <span class="num">01</span>
+        <h3>Sobre mí</h3>
+        <p>Lo que hago y cómo lo hago.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Soy <strong>ingeniero desarrollador Full Stack</strong> y construyo software para distintos
+            dominios: <strong>ERPs y sistemas financieros</strong>, <strong>plataformas SaaS multi-tenant</strong>,
+            <strong>puntos de venta</strong>, <strong>integraciones con APIs de terceros</strong> y
+            <strong>productos con IA</strong>. Me especializo en sistemas de misión crítica, donde la
+            exactitud del dato y la confiabilidad no son negociables.
+          </p>
+          <p>
+            Me muevo cómodo en todas las capas: <strong>base de datos Oracle y PL/SQL</strong> a nivel
+            de motor de liquidación, <strong>backends en Java EE y Python/FastAPI</strong> con
+            arquitectura hexagonal, <strong>frontends en Next.js/React</strong>, e
+            <strong>integraciones vía API REST y webhooks</strong>. Todo con pipelines de
+            <strong>CI/CD</strong> y despliegues en contenedores.
+          </p>
+          <p>
+            Hoy mi diferencial es la <strong>ingeniería con agentes de IA</strong>: diseño harnesses,
+            skills, hooks y servidores MCP que convierten a modelos como Claude, GPT, Gemini o
+            DeepSeek en un equipo de especialistas que trabaja con las reglas del negocio.
+          </p>
+          <ul class="principles">
+            <li><b>Causa raíz, no parches.</b> Diagnóstico con datos reales antes de tocar código.</li>
+            <li><b>Blast radius mínimo.</b> Cambios aislados, backups y rollback siempre listos.</li>
+            <li><b>Nada hardcodeado.</b> Configuración parametrizable y trazable.</li>
+            <li><b>Código que se lee.</b> SOLID, Clean Architecture, DDD táctico.</li>
+          </ul>
+        </div>
+        <div class="stats">
+          <div class="stat reveal tilt"><b data-count="10">0</b><span>+</span><p>Sistemas en producción</p></div>
+          <div class="stat reveal tilt"><b data-count="22">0</b><p>Agentes especialistas diseñados</p></div>
+          <div class="stat reveal tilt"><b data-count="50">0</b><span>+</span><p>Skills y pipelines para agentes</p></div>
+          <div class="stat reveal tilt"><b data-count="7">0</b><p>Familias de modelos de IA en uso</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <span class="num">02</span>
+        <h3>Stack técnico</h3>
+        <p>Lenguajes, frameworks y herramientas con los que construyo.</p>
+      </div>
+
+      <div class="langs reveal">
+        <div class="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" loading="lazy"><span>Java</span></div>
+        <div class="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" loading="lazy"><span>Python</span></div>
+        <div class="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" alt="" loading="lazy"><span>Go</span></div>
+        <div class="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="" loading="lazy"><span>TypeScript</span></div>
+        <div class="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy"><span>JavaScript</span></div>
+        <div class="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="" loading="lazy"><span>PL/SQL</span></div>
+        <div class="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="" loading="lazy"><span>SQL</span></div>
+        <div class="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy"><span>HTML/CSS</span></div>
+        <div class="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="" loading="lazy"><span>Bash/PowerShell</span></div>
+      </div>
+
+      <div class="skill-grid">
+        <article class="card reveal tilt">
+          <div class="card-ico">⚙️</div>
+          <h4>Backend</h4>
+          <div class="chips"><i>Java EE</i><i>JSF · PrimeFaces</i><i>CDI · JTA</i><i>JPA / EclipseLink</i><i>Maven · Ant</i><i>Python 3.12</i><i>FastAPI</i><i>SQLAlchemy 2 async</i><i>Pydantic</i><i>Alembic</i><i>Django</i><i>Go · goroutines</i><i>Node.js</i><i>REST · Webhooks</i><i>JWT · RBAC</i></div>
+        </article>
+        <article class="card reveal tilt">
+          <div class="card-ico">🎨</div>
+          <h4>Frontend</h4>
+          <div class="chips"><i>Next.js 16</i><i>React</i><i>TypeScript</i><i>Tailwind CSS v4</i><i>shadcn/ui</i><i>Zustand</i><i>React Hook Form</i><i>Zod</i><i>Axios</i><i>PrimeFaces</i><i>Wails (desktop)</i><i>Vite</i><i>Responsive / Dark mode</i></div>
+        </article>
+        <article class="card reveal tilt">
+          <div class="card-ico">🗄️</div>
+          <h4>Datos</h4>
+          <div class="chips"><i>Oracle 19c</i><i>PL/SQL avanzado</i><i>Packages · Procedures</i><i>Tuning de queries</i><i>PostgreSQL</i><i>Supabase</i><i>SQLite</i><i>Pinecone (vectores)</i><i>JDBC</i><i>Migraciones versionadas</i><i>JasperReports</i></div>
+        </article>
+        <article class="card reveal tilt">
+          <div class="card-ico">🏛️</div>
+          <h4>Arquitectura</h4>
+          <div class="chips"><i>Hexagonal (Ports & Adapters)</i><i>Clean Architecture</i><i>DDD táctico</i><i>SOLID</i><i>Microservicios</i><i>Multi-tenant</i><i>3 capas / Facades</i><i>CQRS ligero</i><i>Event-driven · Webhooks</i><i>Idempotencia</i></div>
+        </article>
+        <article class="card reveal tilt">
+          <div class="card-ico">🚀</div>
+          <h4>DevOps & Cloud</h4>
+          <div class="chips"><i>Docker</i><i>Docker Compose</i><i>GitHub Actions</i><i>Self-hosted runners</i><i>WildFly · JBoss</i><i>Vercel</i><i>AWS CLI</i><i>Git Flow</i><i>Quality Gates</i><i>n8n</i></div>
+        </article>
+        <article class="card reveal tilt">
+          <div class="card-ico">🧪</div>
+          <h4>Calidad & Testing</h4>
+          <div class="chips"><i>pytest</i><i>pytest-asyncio</i><i>Testcontainers</i><i>Playwright E2E</i><i>Ruff · Black</i><i>mypy</i><i>import-linter</i><i>pre-commit</i><i>Code review</i><i>Postman · Apidog</i></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- AI -->
+    <section id="ai" class="section">
+      <div class="section-head reveal">
+        <span class="num">03</span>
+        <h3>IA & Agentes</h3>
+        <p>No solo uso IA: diseño los sistemas donde los agentes trabajan.</p>
+      </div>
+
+      <div class="ai-wrap">
+        <div class="orbit reveal" aria-hidden="true">
+          <div class="core"><span>Harness</span><small>orquestador</small></div>
+          <div class="ring r1">
+            <b style="--a:0deg">Claude</b><b style="--a:120deg">GPT</b><b style="--a:240deg">Gemini</b>
+          </div>
+          <div class="ring r2">
+            <b style="--a:30deg">DeepSeek</b><b style="--a:120deg">Kimi</b><b style="--a:210deg">Qwen</b><b style="--a:300deg">Codex</b>
+          </div>
+          <div class="ring r3">
+            <b style="--a:60deg">RAG</b><b style="--a:150deg">MCP</b><b style="--a:240deg">Skills</b><b style="--a:330deg">Hooks</b>
+          </div>
+        </div>
+
+        <div class="ai-cards">
+          <article class="card reveal tilt">
+            <h4><span class="tag">Harness Engineering</span></h4>
+            <p>Diseño de <b>harnesses para Claude Code y OpenCode</b>: 22 agentes especialistas por módulo de negocio, pipelines de Product Owner y Desarrollo (radicar → analizar → construir → probar → revisar → documentar), hooks de validación y configuración multi-cliente.</p>
+          </article>
+          <article class="card reveal tilt">
+            <h4><span class="tag">RAG</span></h4>
+            <p>Asistentes con <b>Retrieval-Augmented Generation</b>: embeddings, búsqueda vectorial en <b>Pinecone</b>, generación con <b>Gemini</b>, detrás de puertos/adaptadores para cambiar de modelo o de vector store sin tocar el dominio.</p>
+          </article>
+          <article class="card reveal tilt">
+            <h4><span class="tag">MCP & Tools</span></h4>
+            <p><b>Servidores MCP</b> propios (p. ej. acceso Oracle multi-cliente en <b>solo lectura con bloqueo duro</b> y auditoría de intentos de escritura), knowledge graph del código y automatización git para agentes.</p>
+          </article>
+          <article class="card reveal tilt">
+            <h4><span class="tag">AI-DLC · Spec-driven</span></h4>
+            <p>Desarrollo guiado por especificación: PRDs, reglas y extensiones que el agente carga como restricciones duras; <b>guardrails de seguridad</b> (bloqueo de hosts de producción) y humano en el bucle para lo crítico.</p>
+          </article>
+          <article class="card reveal tilt">
+            <h4><span class="tag">Automatización</span></h4>
+            <p>Flujos con <b>n8n</b>, bots de <b>WhatsApp (Baileys)</b>, generación automática de reportes de gerencia y dashboards de pipeline a partir de issues de GitHub.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="models reveal">
+        <div class="model"><b>Claude</b><small>Anthropic · Opus / Sonnet / Haiku · Claude Code</small></div>
+        <div class="model"><b>OpenAI</b><small>GPT · Codex</small></div>
+        <div class="model"><b>Gemini</b><small>Google · google-genai SDK</small></div>
+        <div class="model"><b>DeepSeek</b><small>Razonamiento y código</small></div>
+        <div class="model"><b>Kimi</b><small>Moonshot AI · contexto largo</small></div>
+        <div class="model"><b>Qwen</b><small>Alibaba Cloud</small></div>
+        <div class="model"><b>OpenCode</b><small>Agentes open source multi-modelo</small></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <span class="num">04</span>
+        <h3>Proyectos destacados</h3>
+        <p>Sistemas reales, en producción o en camino.</p>
+      </div>
+
+      <div class="filters reveal">
+        <button class="on" data-f="all">Todos</button>
+        <button data-f="ai">IA / Agentes</button>
+        <button data-f="back">Backend</button>
+        <button data-f="front">Frontend</button>
+        <button data-f="desk">Desktop</button>
+        <button data-f="data">PL/SQL</button>
+      </div>
+
+      <div class="projects">
+        <article class="project featured reveal tilt" data-cat="ai back front desk">
+          <div class="p-top"><span class="p-kind">App de escritorio · Open Source</span><span class="p-status live">Código abierto</span></div>
+          <h4>KARINA — Monitor de consumo de IA</h4>
+          <p>App de escritorio <b>local-first</b> y multiplataforma (Windows / Linux / macOS) que monitorea en tiempo casi real el consumo de tokens, rate limits y saldo de <b>Claude, OpenAI, Gemini y DeepSeek</b>. Arquitectura de adaptadores por proveedor, polling con backoff exponencial, historial local con gráficos, alertas por umbral, exportación CSV/PDF y API keys guardadas en el almacén seguro del sistema operativo. Regla de oro: solo datos reales, nada inventado.</p>
+          <div class="chips"><i>Go</i><i>Wails v2</i><i>React</i><i>TypeScript</i><i>Vite</i><i>Tailwind</i><i>Zustand</i><i>OS Keyring</i></div>
+          <a class="p-link" href="https://github.com/Kevin25DC/karina-token" target="_blank" rel="noopener">Ver en GitHub →</a>
+        </article>
+        <article class="project reveal tilt" data-cat="ai back">
+          <div class="p-top"><span class="p-kind">Agentes IA</span><span class="p-status live">En uso</span></div>
+          <h4>Treasury Harness — equipo de agentes</h4>
+          <p>Harness para Claude Code / OpenCode sobre un ERP empresarial: 22 agentes especialistas por módulo de negocio, pipelines PO/DEV anclados a issues de GitHub, hook de validación SQL, MCP Oracle de solo lectura, knowledge graph y dashboard de gerencia.</p>
+          <div class="chips"><i>Claude Code</i><i>OpenCode</i><i>MCP</i><i>Node.js</i><i>Hooks</i><i>Skills</i></div>
+        </article>
+
+        <article class="project reveal tilt" data-cat="ai back">
+          <div class="p-top"><span class="p-kind">Microservicio + RAG</span><span class="p-status build">En desarrollo</span></div>
+          <h4>IAM multi-tenant + Asistente IA</h4>
+          <p>Microservicio de identidad y acceso con JWT (access + refresh) y RBAC, arquitectura hexagonal + Clean Architecture + DDD. Incluye un módulo de agente IA con RAG (Pinecone + Gemini) desacoplado por puertos.</p>
+          <div class="chips"><i>FastAPI</i><i>SQLAlchemy async</i><i>PostgreSQL</i><i>Pinecone</i><i>Gemini</i><i>Docker</i></div>
+        </article>
+
+        <article class="project reveal tilt" data-cat="front">
+          <div class="p-top"><span class="p-kind">Frontend</span><span class="p-status build">En desarrollo</span></div>
+          <h4>Centro de Administración & Panel de Aprobación</h4>
+          <p>Dos apps Next.js 16: login multi-tenant, gestión de roles/permisos y dashboard; y un panel interno para aprobar el registro de nuevas empresas. Refresh token automático, tema oscuro "glass" con neón.</p>
+          <div class="chips"><i>Next.js 16</i><i>Tailwind v4</i><i>shadcn/ui</i><i>Zustand</i><i>Zod</i></div>
+        </article>
+
+        <article class="project reveal tilt" data-cat="back data">
+          <div class="p-top"><span class="p-kind">Integración fintech</span><span class="p-status live">QA</span></div>
+          <h4>Integración de pagos vía API REST</h4>
+          <p>Reemplazo de archivos planos por un API REST bidireccional con una plataforma de pagos: beneficiarios, órdenes de pago y conciliación. 100 % parametrizable, idempotente y auditado contra datos reales. Receptor de webhooks en Java 17 con despliegue CI/CD a runner self-hosted.</p>
+          <div class="chips"><i>Java EE</i><i>Java 17 · Maven</i><i>REST</i><i>Webhooks</i><i>Oracle</i><i>GitHub Actions</i></div>
+        </article>
+
+        <article class="project reveal tilt" data-cat="data back">
+          <div class="p-top"><span class="p-kind">Plataforma</span><span class="p-status live">Producción</span></div>
+          <h4>ERP financiero multi-cliente</h4>
+          <p>Desarrollo evolutivo de un ERP con módulos de tesorería, presupuesto, contabilidad NIIF, contratos e inventario. Un repo por cliente sobre núcleo compartido.</p>
+          <div class="chips"><i>Java EE</i><i>JSF · PrimeFaces</i><i>JPA</i><i>Oracle 19c</i><i>WildFly</i><i>Jasper</i></div>
+        </article>
+
+        <article class="project reveal tilt" data-cat="data">
+          <div class="p-top"><span class="p-kind">Motor PL/SQL</span><span class="p-status live">Producción</span></div>
+          <h4>Motor de liquidación de nómina</h4>
+          <p>Diagnóstico y corrección del motor de nómina en Oracle: retención en la fuente, vacaciones, incapacidades, libranzas y embargos. Fixes de causa raíz con procedures dedicados, backups y validación contra liquidaciones de referencia.</p>
+          <div class="chips"><i>PL/SQL</i><i>Oracle</i><i>JDBC</i><i>Normativa laboral CO</i><i>Jasper</i></div>
+        </article>
+
+        <article class="project reveal tilt" data-cat="ai back front">
+          <div class="p-top"><span class="p-kind">Producto</span><span class="p-status build">En desarrollo</span></div>
+          <h4>Nómina IA — Sistema de nómina</h4>
+          <p>Nuevo sistema de nómina construido con AI-DLC a partir de un PRD v8.0: libranzas, embargos con prelación legal, vacaciones, liquidación definitiva. Tests E2E y CI con matriz de Python.</p>
+          <div class="chips"><i>FastAPI</i><i>Next.js</i><i>PostgreSQL</i><i>Playwright</i><i>GitHub Actions</i><i>Docker</i></div>
+        </article>
+
+        <article class="project reveal tilt" data-cat="back front ai">
+          <div class="p-top"><span class="p-kind">SaaS</span><span class="p-status live">Proyecto propio</span></div>
+          <h4>Berserker — POS de ventas</h4>
+          <p>Software de ventas: productos, inventario, facturación, clientes y reportes, con integración a WhatsApp para notificaciones.</p>
+          <div class="chips"><i>Django</i><i>Python</i><i>Baileys</i><i>Docker</i></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- DEVOPS -->
+    <section id="devops" class="section">
+      <div class="section-head reveal">
+        <span class="num">05</span>
+        <h3>Deploy & CI/CD</h3>
+        <p>Del commit a producción, automatizado y con red de seguridad.</p>
+      </div>
+      <div class="pipeline reveal">
+        <div class="stage"><div class="st-ico">⎇</div><b>Commit</b><small>feature/issue-N</small></div>
+        <div class="pipe"><span></span></div>
+        <div class="stage"><div class="st-ico">✓</div><b>Lint & Types</b><small>ruff · mypy · eslint</small></div>
+        <div class="pipe"><span></span></div>
+        <div class="stage"><div class="st-ico">⚗</div><b>Tests</b><small>pytest · Playwright</small></div>
+        <div class="pipe"><span></span></div>
+        <div class="stage"><div class="st-ico">▣</div><b>Build</b><small>Docker · Maven · WAR</small></div>
+        <div class="pipe"><span></span></div>
+        <div class="stage"><div class="st-ico">⛨</div><b>Quality Gate</b><small>review · PR</small></div>
+        <div class="pipe"><span></span></div>
+        <div class="stage"><div class="st-ico">▲</div><b>Deploy</b><small>runner · Vercel</small></div>
+      </div>
+      <div class="devops-grid">
+        <div class="mini reveal"><b>GitHub Actions</b><p>Matrices de versiones, servicios Postgres en CI, artefactos y jobs encadenados.</p></div>
+        <div class="mini reveal"><b>Runners self-hosted</b><p>Despliegue a servidores en red interna sin exponer puertos.</p></div>
+        <div class="mini reveal"><b>Migraciones seguras</b><p>Scripts versionados con rollback, precondiciones y validación posterior.</p></div>
+        <div class="mini reveal"><b>Contenedores</b><p>Dockerfiles multi-servicio y docker-compose para dev, QA y prod.</p></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="section-head reveal center">
+        <span class="num">06</span>
+        <h3>¿Construimos algo?</h3>
+        <p>Aplicaciones, arquitectura, integraciones o agentes de IA. Escríbeme.</p>
+      </div>
+      <div class="contact-grid">
+        <a class="c-card reveal tilt" data-link="email"><span>✉️</span><b>Correo</b><small data-text="email"></small></a>
+        <a class="c-card reveal tilt" data-link="whatsapp" target="_blank" rel="noopener"><span>💬</span><b>WhatsApp</b><small data-text="phone"></small></a>
+        <a class="c-card reveal tilt" data-link="linkedin" target="_blank" rel="noopener"><span>in</span><b>LinkedIn</b><small data-text="linkedin"></small></a>
+        <a class="c-card reveal tilt" data-link="github" target="_blank" rel="noopener"><span>⌥</span><b>GitHub</b><small data-text="github"></small></a>
+      </div>
+      <button class="copy reveal" id="copyMail">Copiar correo</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="y"></span> Kevin Hernández · Hecho a mano con HTML, CSS y JS · Desplegado en Vercel</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
