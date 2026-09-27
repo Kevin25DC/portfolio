@@ -23,7 +23,7 @@ const hrefs = {
 const texts = {
   email: CONTACT.email,
   phone: CONTACT.phone,
-  linkedin: CONTACT.linkedin.replace(/^https?:\/\/(www\.)?/, ""),
+  linkedin: CONTACT.linkedin.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""),
   github: CONTACT.github.replace(/^https?:\/\//, ""),
 };
 $$("[data-link]").forEach((a) => (a.href = hrefs[a.dataset.link]));
