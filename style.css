@@ -311,7 +311,10 @@ h2 { font-family: var(--mono); font-size: clamp(1.05rem, 2.2vw, 1.45rem); color:
 }
 .c-card > span { font-size: 1.6rem; width: 56px; height: 56px; display: grid; place-items: center; border-radius: 16px; background: rgba(139, 92, 246, .12); font-weight: 700; margin-bottom: 6px; }
 .c-card small { color: var(--muted); font-family: var(--mono); font-size: .76rem; word-break: break-all; }
-.copy { display: block; margin: 28px auto 0; font-family: var(--mono); font-size: .85rem; padding: 10px 22px; border-radius: 999px; background: var(--panel); border: 1px solid var(--line); color: var(--text); cursor: pointer; transition: .25s; }
+.btn svg { width: 18px; height: 18px; }
+.cv-btn { border-color: rgba(34, 211, 238, .4); }
+.contact-actions { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px; margin-top: 32px; }
+.copy { display: block; font-family: var(--mono); font-size: .85rem; padding: 10px 22px; border-radius: 999px; background: var(--panel); border: 1px solid var(--line); color: var(--text); cursor: pointer; transition: .25s; }
 .copy:hover { border-color: var(--cyan); }
 footer { text-align: center; padding: 60px 16px 40px; color: var(--muted); font-size: .85rem; font-family: var(--mono); }
 
