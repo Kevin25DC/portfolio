@@ -297,6 +297,7 @@ h2 { font-family: var(--mono); font-size: clamp(1.05rem, 2.2vw, 1.45rem); color:
 .pipe { flex: 1; min-width: 24px; height: 2px; background: var(--line); position: relative; overflow: hidden; margin-bottom: 40px; }
 .pipe span { position: absolute; inset: 0; background: var(--grad); transform: scaleX(0); transform-origin: left; transition: transform .6s; }
 .pipe.fill span { transform: scaleX(1); }
+.langs.tools { grid-template-columns: repeat(6, 1fr); }
 .devops-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 18px; }
 .mini { padding: 20px; border: 1px solid var(--line); border-radius: 14px; background: var(--panel); }
 .mini b { display: block; margin-bottom: 6px; }
@@ -349,7 +350,7 @@ footer { text-align: center; padding: 60px 16px 40px; color: var(--muted); font-
   .links a { padding: 10px; width: 100%; text-align: center; }
   .skill-grid, .projects { grid-template-columns: 1fr; }
   .models { grid-template-columns: repeat(2, 1fr); }
-  .langs { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .langs, .langs.tools { grid-template-columns: repeat(3, 1fr); gap: 8px; }
   .lang { padding: 12px 4px; }
   .lang img { width: 30px; height: 30px; }
   .term-body { font-size: .72rem; min-height: 300px; }

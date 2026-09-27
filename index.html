@@ -70,8 +70,8 @@
     <!-- MARQUEE -->
     <div class="marquee" aria-hidden="true">
       <div class="track">
-        <span>Java</span><span>Python</span><span>Go</span><span>TypeScript</span><span>PL/SQL</span><span>Oracle 19c</span><span>FastAPI</span><span>Next.js</span><span>React</span><span>PostgreSQL</span><span>Docker</span><span>GitHub Actions</span><span>Claude</span><span>RAG</span><span>MCP</span><span>Pinecone</span><span>Gemini</span><span>DeepSeek</span><span>OpenAI</span><span>Kimi</span><span>Qwen</span>
-        <span>Java</span><span>Python</span><span>Go</span><span>TypeScript</span><span>PL/SQL</span><span>Oracle 19c</span><span>FastAPI</span><span>Next.js</span><span>React</span><span>PostgreSQL</span><span>Docker</span><span>GitHub Actions</span><span>Claude</span><span>RAG</span><span>MCP</span><span>Pinecone</span><span>Gemini</span><span>DeepSeek</span><span>OpenAI</span><span>Kimi</span><span>Qwen</span>
+        <span>Java</span><span>Python</span><span>Go</span><span>TypeScript</span><span>PL/SQL</span><span>Oracle 19c</span><span>FastAPI</span><span>Next.js</span><span>React</span><span>PostgreSQL</span><span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Jenkins</span><span>SonarQube</span><span>Datadog</span><span>Claude</span><span>RAG</span><span>MCP</span><span>Pinecone</span><span>Gemini</span><span>DeepSeek</span><span>OpenAI</span><span>Kimi</span><span>Qwen</span>
+        <span>Java</span><span>Python</span><span>Go</span><span>TypeScript</span><span>PL/SQL</span><span>Oracle 19c</span><span>FastAPI</span><span>Next.js</span><span>React</span><span>PostgreSQL</span><span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Jenkins</span><span>SonarQube</span><span>Datadog</span><span>Claude</span><span>RAG</span><span>MCP</span><span>Pinecone</span><span>Gemini</span><span>DeepSeek</span><span>OpenAI</span><span>Kimi</span><span>Qwen</span>
       </div>
     </div>
 
@@ -163,7 +163,7 @@
         <article class="card reveal tilt">
           <div class="card-ico">🚀</div>
           <h4>DevOps & Cloud</h4>
-          <div class="chips"><i>Docker</i><i>Docker Compose</i><i>GitHub Actions</i><i>Self-hosted runners</i><i>WildFly · JBoss</i><i>Vercel</i><i>AWS CLI</i><i>Git Flow</i><i>Quality Gates</i><i>n8n</i></div>
+          <div class="chips"><i>Docker</i><i>Docker Compose</i><i>Kubernetes</i><i>Portainer</i><i>GitHub Actions</i><i>Jenkins</i><i>SonarQube</i><i>Datadog</i><i>Self-hosted runners</i><i>WildFly · JBoss</i><i>Vercel</i><i>AWS CLI</i><i>Git Flow</i><i>Quality Gates</i><i>n8n</i></div>
         </article>
         <article class="card reveal tilt">
           <div class="card-ico">🧪</div>
@@ -318,7 +318,15 @@
       <div class="section-head reveal">
         <span class="num">05</span>
         <h3>Deploy & CI/CD</h3>
-        <p>Del commit a producción, automatizado y con red de seguridad.</p>
+        <p>Del commit a producción, automatizado, analizado y monitoreado.</p>
+      </div>
+      <div class="langs tools reveal">
+        <div class="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" alt="" loading="lazy"><span>GitHub Actions</span></div>
+        <div class="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="" loading="lazy"><span>Jenkins</span></div>
+        <div class="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sonarqube/sonarqube-original.svg" alt="" loading="lazy"><span>SonarQube</span></div>
+        <div class="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="" loading="lazy"><span>Docker</span></div>
+        <div class="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" alt="" loading="lazy"><span>Kubernetes</span></div>
+        <div class="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/datadog/datadog-original.svg" alt="" loading="lazy"><span>Datadog</span></div>
       </div>
       <div class="pipeline reveal">
         <div class="stage"><div class="st-ico">⎇</div><b>Commit</b><small>feature/issue-N</small></div>
@@ -329,15 +337,21 @@
         <div class="pipe"><span></span></div>
         <div class="stage"><div class="st-ico">▣</div><b>Build</b><small>Docker · Maven · WAR</small></div>
         <div class="pipe"><span></span></div>
-        <div class="stage"><div class="st-ico">⛨</div><b>Quality Gate</b><small>review · PR</small></div>
+        <div class="stage"><div class="st-ico">⛨</div><b>Quality Gate</b><small>SonarQube · review</small></div>
         <div class="pipe"><span></span></div>
-        <div class="stage"><div class="st-ico">▲</div><b>Deploy</b><small>runner · Vercel</small></div>
+        <div class="stage"><div class="st-ico">▲</div><b>Deploy</b><small>Kubernetes · Docker</small></div>
+        <div class="pipe"><span></span></div>
+        <div class="stage"><div class="st-ico">◉</div><b>Monitor</b><small>Datadog</small></div>
       </div>
       <div class="devops-grid">
-        <div class="mini reveal"><b>GitHub Actions</b><p>Matrices de versiones, servicios Postgres en CI, artefactos y jobs encadenados.</p></div>
-        <div class="mini reveal"><b>Runners self-hosted</b><p>Despliegue a servidores en red interna sin exponer puertos.</p></div>
+        <div class="mini reveal"><b>GitHub Actions</b><p>Workflows con matrices de versiones, servicios de BD en CI, artefactos, jobs encadenados y runners self-hosted.</p></div>
+        <div class="mini reveal"><b>Jenkins</b><p>Pipelines declarativos de build, pruebas y despliegue por ambientes.</p></div>
+        <div class="mini reveal"><b>SonarQube</b><p>Análisis estático, cobertura, code smells y quality gates que bloquean el merge.</p></div>
+        <div class="mini reveal"><b>Kubernetes</b><p>Despliegue y orquestación de contenedores: deployments, services, escalado y rollouts.</p></div>
+        <div class="mini reveal"><b>Docker & Portainer</b><p>Dockerfiles multi-servicio, docker-compose por ambiente y administración de contenedores con Portainer.</p></div>
+        <div class="mini reveal"><b>Datadog</b><p>Monitoreo de aplicaciones e infraestructura: métricas, logs, dashboards y alertas.</p></div>
         <div class="mini reveal"><b>Migraciones seguras</b><p>Scripts versionados con rollback, precondiciones y validación posterior.</p></div>
-        <div class="mini reveal"><b>Contenedores</b><p>Dockerfiles multi-servicio y docker-compose para dev, QA y prod.</p></div>
+        <div class="mini reveal"><b>Vercel</b><p>Despliegue continuo de frontends y sitios estáticos conectado a GitHub.</p></div>
       </div>
     </section>
 
