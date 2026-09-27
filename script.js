@@ -262,3 +262,17 @@ $$(".filters button").forEach((b) => b.addEventListener("click", () => {
   };
   draw();
 })();
+
+/* ---------- Experience timeline fill ---------- */
+(() => {
+  const tl = $(".timeline"), fill = $(".tl-line span");
+  if (!tl || !fill) return;
+  const update = () => {
+    const r = tl.getBoundingClientRect();
+    const p = Math.min(Math.max((innerHeight * 0.75 - r.top) / r.height, 0), 1);
+    fill.style.height = (reduced ? 100 : p * 100) + "%";
+  };
+  addEventListener("scroll", update, { passive: true });
+  addEventListener("resize", update);
+  update();
+})();
